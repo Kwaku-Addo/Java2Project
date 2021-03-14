@@ -44,12 +44,12 @@
                         </HBox>
                         <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="26.0" prefHeight="0.0" prefWidth="512.0" spacing="10.0">
                            <children>
-                              <TextField prefHeight="30.0" prefWidth="275.0" text="Hello">
+                              <TextField fx:id="addFirstNameTextField" prefHeight="30.0" prefWidth="275.0" text="Hello">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </TextField>
-                              <TextField prefHeight="31.0" prefWidth="275.0" text="World">
+                              <TextField fx:id="addLastNameTextField" prefHeight="31.0" prefWidth="275.0" text="World">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
@@ -76,12 +76,12 @@
                         </HBox>
                         <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="26.0" prefHeight="0.0" prefWidth="512.0" spacing="10.0">
                            <children>
-                              <TextField prefHeight="31.0" prefWidth="275.0" text="Hello">
+                              <TextField fx:id="addNicknameTextField" prefHeight="31.0" prefWidth="275.0" text="Hello">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </TextField>
-                              <DatePicker prefHeight="31.0" prefWidth="275.0" />
+                              <DatePicker fx:id="addDateOfBirthDatePicker" prefHeight="31.0" prefWidth="275.0" />
                            </children>
                         </HBox>
                      </children>
@@ -104,12 +104,12 @@
                         </HBox>
                         <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="26.0" prefHeight="0.0" prefWidth="512.0" spacing="10.0">
                            <children>
-                              <TextField prefHeight="30.0" prefWidth="200.0" text="Hello">
+                              <TextField fx:id="addPhoneNumberTextField" prefHeight="30.0" prefWidth="200.0" text="Hello">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </TextField>
-                              <TextField prefHeight="30.0" prefWidth="350.0" text="World">
+                              <TextField fx:id="addEmailTextField" prefHeight="30.0" prefWidth="350.0" text="World">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
@@ -136,12 +136,12 @@
                         </HBox>
                         <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="26.0" prefHeight="0.0" prefWidth="512.0" spacing="10.0">
                            <children>
-                              <TextField prefHeight="30.0" prefWidth="275.0" text="Hello">
+                              <TextField fx:id="addStreetNameTextField" prefHeight="30.0" prefWidth="275.0" text="Hello">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </TextField>
-                              <TextField prefHeight="30.0" prefWidth="275.0" text="World">
+                              <TextField fx:id="addApartmentTextField" prefHeight="30.0" prefWidth="275.0" text="World">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
@@ -164,12 +164,12 @@
                         </HBox>
                         <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="35.0" prefHeight="0.0" prefWidth="512.0" spacing="10.0">
                            <children>
-                              <TextField prefHeight="30.0" prefWidth="200.0" text="Hello">
+                              <TextField fx:id="addPostalCodeTextField" prefHeight="30.0" prefWidth="200.0" text="Hello">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </TextField>
-                              <TextField prefHeight="30.0" prefWidth="350.0" text="World">
+                              <TextField fx:id="addCityTextField" prefHeight="30.0" prefWidth="350.0" text="World">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
@@ -182,7 +182,7 @@
                      <children>
                         <HBox alignment="CENTER" layoutX="10.0" layoutY="26.0" prefHeight="0.0" prefWidth="512.0" spacing="10.0">
                            <children>
-                              <Button mnemonicParsing="false" style="-fx-background-color: #7abc32;" text="Save Contact" textFill="WHITE">
+                              <Button fx:id="saveContactButton" mnemonicParsing="false" style="-fx-background-color: #7abc32;" text="Save Contact" textFill="WHITE">
                                  <font>
                                     <Font size="14.0" />
                                  </font>

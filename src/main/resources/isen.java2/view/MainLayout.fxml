@@ -12,26 +12,26 @@
         <menus>
           <Menu mnemonicParsing="false" text="Menu">
             <items>
-              <MenuItem mnemonicParsing="false" text="Home" />
-                  <MenuItem mnemonicParsing="false" text="Close" />
+              <MenuItem id="homeMenuItem" mnemonicParsing="false" text="Home" />
+                  <MenuItem id="closeMenuItem" mnemonicParsing="false" text="Close" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Contact">
             <items>
-              <MenuItem mnemonicParsing="false" text="Add Contact" />
-                  <MenuItem mnemonicParsing="false" text="All Contact " />
+              <MenuItem id="addContactMenuItem" mnemonicParsing="false" text="Add Contact" />
+                  <MenuItem id="allContactsMenuItem" mnemonicParsing="false" text="All Contacts " />
             </items>
           </Menu>
-            <Menu mnemonicParsing="false" text="Export Contact">
+            <Menu mnemonicParsing="false" text="Export Contacts">
                <items>
-                  <MenuItem mnemonicParsing="false" text="Excel Format" />
-                  <MenuItem mnemonicParsing="false" text="PDF" />
+                  <MenuItem id="excelFormatMenuItem" mnemonicParsing="false" text="Excel Format" />
+                  <MenuItem id="pdfMenuItem" mnemonicParsing="false" text="PDF" />
                </items>
             </Menu>
         </menus>
       </MenuBar>
    </top>
    <center>
-      <AnchorPane prefHeight="651.0" prefWidth="758.0" BorderPane.alignment="CENTER" />
+      <AnchorPane fx:id="mainContainerAnchorPane" prefHeight="651.0" prefWidth="758.0" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>

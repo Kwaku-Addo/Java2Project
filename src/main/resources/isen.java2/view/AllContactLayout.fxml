@@ -58,12 +58,12 @@
                               </HBox>
                               <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="26.0" prefHeight="0.0" prefWidth="512.0" spacing="10.0">
                                  <children>
-                                    <TextField editable="false" prefHeight="31.0" prefWidth="240.0" text="Hello">
+                                    <TextField fx:id="firstNameTextField" editable="false" prefHeight="31.0" prefWidth="240.0" text="Hello">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </TextField>
-                                    <TextField editable="false" prefHeight="31.0" prefWidth="240.0" text="World">
+                                    <TextField fx:id="lastNameTextField" editable="false" prefHeight="31.0" prefWidth="240.0" text="World">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
@@ -90,12 +90,12 @@
                               </HBox>
                               <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="26.0" prefHeight="0.0" prefWidth="512.0" spacing="10.0">
                                  <children>
-                                    <TextField editable="false" prefHeight="31.0" prefWidth="240.0" text="Hello">
+                                    <TextField fx:id="nicknameTextField" editable="false" prefHeight="31.0" prefWidth="240.0" text="Hello">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </TextField>
-                                    <DatePicker editable="false" prefHeight="30.0" prefWidth="240.0" />
+                                    <DatePicker fx:id="dateOfBirthDatePicker" editable="false" prefHeight="30.0" prefWidth="240.0" />
                                  </children>
                               </HBox>
                            </children>
@@ -118,12 +118,12 @@
                               </HBox>
                               <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="26.0" prefHeight="0.0" prefWidth="512.0" spacing="10.0">
                                  <children>
-                                    <TextField editable="false" prefHeight="30.0" prefWidth="184.0" text="Hello">
+                                    <TextField fx:id="phoneNumberTextField" editable="false" prefHeight="30.0" prefWidth="184.0" text="Hello">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </TextField>
-                                    <TextField editable="false" prefHeight="30.0" prefWidth="297.0" text="World">
+                                    <TextField fx:id="emailTextField" editable="false" prefHeight="30.0" prefWidth="297.0" text="World">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
@@ -150,12 +150,12 @@
                               </HBox>
                               <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="26.0" prefHeight="0.0" prefWidth="512.0" spacing="10.0">
                                  <children>
-                                    <TextField editable="false" prefHeight="30.0" prefWidth="287.0" text="Hello">
+                                    <TextField fx:id="streetNameTextField" editable="false" prefHeight="30.0" prefWidth="287.0" text="Hello">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </TextField>
-                                    <TextField editable="false" prefHeight="30.0" prefWidth="297.0" text="World">
+                                    <TextField fx:id="apartmentTextField" editable="false" prefHeight="30.0" prefWidth="297.0" text="World">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
@@ -178,12 +178,12 @@
                               </HBox>
                               <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="35.0" prefHeight="0.0" prefWidth="512.0" spacing="10.0">
                                  <children>
-                                    <TextField editable="false" prefHeight="30.0" prefWidth="184.0" text="Hello">
+                                    <TextField fx:id="postalCodeTextField" editable="false" prefHeight="30.0" prefWidth="184.0" text="Hello">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </TextField>
-                                    <TextField editable="false" prefHeight="30.0" prefWidth="297.0" text="World">
+                                    <TextField fx:id="cityTextField" editable="false" prefHeight="30.0" prefWidth="297.0" text="World">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
@@ -196,17 +196,17 @@
                            <children>
                               <HBox alignment="CENTER" layoutX="10.0" layoutY="26.0" prefHeight="0.0" prefWidth="512.0" spacing="10.0">
                                  <children>
-                                    <Button mnemonicParsing="false" style="-fx-background-color: #7abc32;" text="Edit" textFill="WHITE">
+                                    <Button fx:id="editContactButton" mnemonicParsing="false" style="-fx-background-color: #7abc32;" text="Edit" textFill="WHITE">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </Button>
-                                    <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #fe3939;" text="Delete" textFill="WHITE">
+                                    <Button fx:id="deleteContactButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #fe3939;" text="Delete" textFill="WHITE">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </Button>
-                                    <Button layoutX="253.0" layoutY="30.0" mnemonicParsing="false" style="-fx-background-color: #009dff;" text="Export Contact" textFill="WHITE">
+                                    <Button fx:id="exportIndividualContactButton" layoutX="253.0" layoutY="30.0" mnemonicParsing="false" style="-fx-background-color: #009dff;" text="Export Contact" textFill="WHITE">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
