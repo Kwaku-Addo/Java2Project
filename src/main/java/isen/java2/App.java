@@ -20,12 +20,12 @@ public class App extends Application {
 	@Override
 	public void start(Stage stage) throws IOException {
 		// Nothing new here
-		stage.setTitle("The best Quizz in the Universe");
+		stage.setTitle("Contact App");
 		// Load the main layout from file
 		mainlayout = loadFXML("MainLayout");
 		// Back to normal, except we use our newly defined member. Seems cumbersome, but
 		// it will make sense in two seconds
-		scene = new Scene(mainlayout, 640, 480);
+		scene = new Scene(mainlayout, 758, 676);
 		stage.setScene(scene);
 		// This is a sample about how to customize your application using BootstrapFX.
 		// here I apply the bootstrapFX CSS to my root node (MainLayout). I can then
