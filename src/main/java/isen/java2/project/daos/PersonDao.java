@@ -3,6 +3,8 @@ package isen.java2.project.daos;
 import java.util.List;
 
 import isen.java2.project.entities.Person;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 import java.sql.Statement;
 import java.sql.Connection;
@@ -24,7 +26,7 @@ public class PersonDao {
 			try (Statement statement = connection.createStatement()) {
 				try (ResultSet results = statement.executeQuery("SELECT * FROM person")) {
 					while (results.next()) {
-                        Person person = new Person(results.getInt("idperson"),
+                        Person person = new Person(results.getInt("id"),
                                                     results.getString("lastname"),
                                                     results.getString("firstname"),
                                                     results.getString("nickname"),
@@ -38,16 +40,12 @@ public class PersonDao {
 						
 						listPerson.add(person);
 					}
-					results.close();
-					statement.close();
-					connection.close();
 				}
 			}
 		} catch (SQLException e) {
 
 			e.printStackTrace();
 		}
-		
 		return listPerson;
 		//throw new RuntimeException("Method is not yet implemented");
 	}
@@ -108,7 +106,7 @@ public class PersonDao {
     
     public void deletePerson(Person person){
         try (Connection connection = DataSourceFactory.getDataSource().getConnection()) {
-			String sqlQuery = "DELETE FROM person WHERE idperson = ?"; 
+			String sqlQuery = "DELETE FROM person WHERE id = ?";
                                 
 			try (PreparedStatement statement = connection.prepareStatement(
 							sqlQuery, Statement.RETURN_GENERATED_KEYS)) {
@@ -124,7 +122,7 @@ public class PersonDao {
 
     public void deletePerson(Integer id){
         try (Connection connection = DataSourceFactory.getDataSource().getConnection()) {
-			String sqlQuery = "DELETE FROM person WHERE idperson = ?"; 
+			String sqlQuery = "DELETE FROM person WHERE id = ?";
                                 
 			try (PreparedStatement statement = connection.prepareStatement(
 							sqlQuery, Statement.RETURN_GENERATED_KEYS)) {

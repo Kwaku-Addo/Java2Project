@@ -63,5 +63,17 @@ public class AddContactLayoutController {
         person.setBirthDate(addDateOfBirthDatePicker.getValue());
 
        personDao.addPerson(person);
+
+       addFirstNameTextField.clear();
+       addLastNameTextField.clear();
+       addNicknameTextField.clear();
+       addPhoneNumberTextField.clear();
+       addStreetNameTextField.clear();
+       addApartmentTextField.clear();
+       addPostalCodeTextField.clear();
+       addCityTextField.clear();
+       addEmailTextField.clear();
+       addDateOfBirthDatePicker.getEditor().clear();
+
     }
 }

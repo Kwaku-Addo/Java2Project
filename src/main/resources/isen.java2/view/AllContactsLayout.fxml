@@ -29,16 +29,16 @@
         <items>
             <AnchorPane>
                <children>
-                  <TableView prefHeight="530.0" prefWidth="364.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <TableView fx:id="contactsTableView" prefHeight="530.0" prefWidth="364.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" >
                     <columns>
-                      <TableColumn prefWidth="217.0" text="Contacts" />
+                      <TableColumn fx:id="contactsTableColumn" prefWidth="217.0" text="Contacts" />
                     </columns>
                   </TableView>
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="530.0" prefWidth="470.0" style="-fx-background-color: #e8ffff;">
                <children>
-                  <VBox prefHeight="530.0" prefWidth="493.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <VBox fx:id="contactDetailsVBox" prefHeight="530.0" prefWidth="493.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
                         <VBox spacing="5.0">
                            <children>
@@ -58,12 +58,12 @@
                               </HBox>
                               <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="26.0" prefHeight="0.0" prefWidth="512.0" spacing="10.0">
                                  <children>
-                                    <TextField fx:id="firstNameTextField" editable="false" prefHeight="31.0" prefWidth="240.0" text="Hello">
+                                    <TextField fx:id="firstNameTextField" editable="false" prefHeight="31.0" prefWidth="240.0">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="lastNameTextField" editable="false" prefHeight="31.0" prefWidth="240.0" text="World">
+                                    <TextField fx:id="lastNameTextField" editable="false" prefHeight="31.0" prefWidth="240.0">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
@@ -90,7 +90,7 @@
                               </HBox>
                               <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="26.0" prefHeight="0.0" prefWidth="512.0" spacing="10.0">
                                  <children>
-                                    <TextField fx:id="nicknameTextField" editable="false" prefHeight="31.0" prefWidth="240.0" text="Hello">
+                                    <TextField fx:id="nicknameTextField" editable="false" prefHeight="31.0" prefWidth="240.0">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
@@ -118,12 +118,12 @@
                               </HBox>
                               <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="26.0" prefHeight="0.0" prefWidth="512.0" spacing="10.0">
                                  <children>
-                                    <TextField fx:id="phoneNumberTextField" editable="false" prefHeight="30.0" prefWidth="184.0" text="Hello">
+                                    <TextField fx:id="phoneNumberTextField" editable="false" prefHeight="30.0" prefWidth="184.0">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="emailTextField" editable="false" prefHeight="30.0" prefWidth="297.0" text="World">
+                                    <TextField fx:id="emailTextField" editable="false" prefHeight="30.0" prefWidth="297.0">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
@@ -150,12 +150,12 @@
                               </HBox>
                               <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="26.0" prefHeight="0.0" prefWidth="512.0" spacing="10.0">
                                  <children>
-                                    <TextField fx:id="streetNameTextField" editable="false" prefHeight="30.0" prefWidth="287.0" text="Hello">
+                                    <TextField fx:id="streetNameTextField" editable="false" prefHeight="30.0" prefWidth="287.0">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="apartmentTextField" editable="false" prefHeight="30.0" prefWidth="297.0" text="World">
+                                    <TextField fx:id="apartmentTextField" editable="false" prefHeight="30.0" prefWidth="297.0">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
@@ -178,12 +178,12 @@
                               </HBox>
                               <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="35.0" prefHeight="0.0" prefWidth="512.0" spacing="10.0">
                                  <children>
-                                    <TextField fx:id="postalCodeTextField" editable="false" prefHeight="30.0" prefWidth="184.0" text="Hello">
+                                    <TextField fx:id="postalCodeTextField" editable="false" prefHeight="30.0" prefWidth="184.0">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="cityTextField" editable="false" prefHeight="30.0" prefWidth="297.0" text="World">
+                                    <TextField fx:id="cityTextField" editable="false" prefHeight="30.0" prefWidth="297.0">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
@@ -201,7 +201,7 @@
                                           <Font size="14.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="deleteContactButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #fe3939;" text="Delete" textFill="WHITE">
+                                    <Button fx:id="deleteContactButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #fe3939;" text="Delete" textFill="WHITE" onAction="#deleteContact">
                                        <font>
                                           <Font size="14.0" />
                                        </font>

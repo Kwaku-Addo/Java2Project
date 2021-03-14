@@ -31,7 +31,7 @@
                <children>
                   <TableView fx:id="contactsTableView" prefHeight="530.0" prefWidth="364.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <columns>
-                      <TableColumn fx:id="contactsTableColumn" prefWidth="217.0" text="Contacts" />
+                      <TableColumn prefWidth="217.0" text="Contacts" />
                     </columns>
                   </TableView>
                </children>
