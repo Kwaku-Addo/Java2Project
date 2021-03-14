@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox prefHeight="651.0" prefWidth="758.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="651.0" prefWidth="758.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="isen.java2.project.controller.HomeController">
    <children>
       <Pane prefHeight="100.0" prefWidth="719.0" style="-fx-border-color: #009dff; -fx-background-color: #009dff;">
          <children>
@@ -31,7 +31,7 @@
       </VBox>
       <VBox alignment="CENTER">
          <children>
-            <Button fx:id="lauchApplicationButton" mnemonicParsing="false" style="-fx-background-color: #009dff;" text="Click to Launch" textFill="WHITE">
+            <Button fx:id="lauchApplicationButton" mnemonicParsing="false" style="-fx-background-color: #009dff;" text="Click to Launch" textFill="WHITE" onAction="#gotoAllContacts">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
