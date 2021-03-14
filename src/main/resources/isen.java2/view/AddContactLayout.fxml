@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox alignment="TOP_RIGHT" prefHeight="651.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="TOP_RIGHT" prefHeight="651.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="isen.java2.project.controller.AddContactLayoutController" >
    <children>
       <Pane prefHeight="100.0" prefWidth="719.0" style="-fx-border-color: #009dff; -fx-background-color: #009dff;">
          <children>
@@ -44,12 +44,12 @@
                         </HBox>
                         <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="26.0" prefHeight="0.0" prefWidth="512.0" spacing="10.0">
                            <children>
-                              <TextField fx:id="addFirstNameTextField" prefHeight="30.0" prefWidth="275.0" text="Hello">
+                              <TextField fx:id="addFirstNameTextField" prefHeight="30.0" prefWidth="275.0" promptText="Enter First Name Here">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </TextField>
-                              <TextField fx:id="addLastNameTextField" prefHeight="31.0" prefWidth="275.0" text="World">
+                              <TextField fx:id="addLastNameTextField" prefHeight="31.0" prefWidth="275.0" promptText="Enter Last Name Here">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
@@ -76,12 +76,12 @@
                         </HBox>
                         <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="26.0" prefHeight="0.0" prefWidth="512.0" spacing="10.0">
                            <children>
-                              <TextField fx:id="addNicknameTextField" prefHeight="31.0" prefWidth="275.0" text="Hello">
+                              <TextField fx:id="addNicknameTextField" prefHeight="31.0" prefWidth="275.0" promptText="Enter Nickname Here">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </TextField>
-                              <DatePicker fx:id="addDateOfBirthDatePicker" prefHeight="31.0" prefWidth="275.0" />
+                              <DatePicker fx:id="addDateOfBirthDatePicker" prefHeight="31.0" prefWidth="275.0" promptText="Enter Date of Birth Here" />
                            </children>
                         </HBox>
                      </children>
@@ -104,12 +104,12 @@
                         </HBox>
                         <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="26.0" prefHeight="0.0" prefWidth="512.0" spacing="10.0">
                            <children>
-                              <TextField fx:id="addPhoneNumberTextField" prefHeight="30.0" prefWidth="200.0" text="Hello">
+                              <TextField fx:id="addPhoneNumberTextField" prefHeight="30.0" prefWidth="200.0" promptText="Enter Phone Number Here">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </TextField>
-                              <TextField fx:id="addEmailTextField" prefHeight="30.0" prefWidth="350.0" text="World">
+                              <TextField fx:id="addEmailTextField" prefHeight="30.0" prefWidth="350.0" promptText="Enter Email Here">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
@@ -136,12 +136,12 @@
                         </HBox>
                         <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="26.0" prefHeight="0.0" prefWidth="512.0" spacing="10.0">
                            <children>
-                              <TextField fx:id="addStreetNameTextField" prefHeight="30.0" prefWidth="275.0" text="Hello">
+                              <TextField fx:id="addStreetNameTextField" prefHeight="30.0" prefWidth="275.0" promptText="Enter Street Name Here">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </TextField>
-                              <TextField fx:id="addApartmentTextField" prefHeight="30.0" prefWidth="275.0" text="World">
+                              <TextField fx:id="addApartmentTextField" prefHeight="30.0" prefWidth="275.0" promptText="Enter Apartment Here">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
@@ -164,12 +164,12 @@
                         </HBox>
                         <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="35.0" prefHeight="0.0" prefWidth="512.0" spacing="10.0">
                            <children>
-                              <TextField fx:id="addPostalCodeTextField" prefHeight="30.0" prefWidth="200.0" text="Hello">
+                              <TextField fx:id="addPostalCodeTextField" prefHeight="30.0" prefWidth="200.0" promptText="Enter Postal Code Here">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </TextField>
-                              <TextField fx:id="addCityTextField" prefHeight="30.0" prefWidth="350.0" text="World">
+                              <TextField fx:id="addCityTextField" prefHeight="30.0" prefWidth="350.0" promptText="Enter City Here">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
@@ -182,7 +182,7 @@
                      <children>
                         <HBox alignment="CENTER" layoutX="10.0" layoutY="26.0" prefHeight="0.0" prefWidth="512.0" spacing="10.0">
                            <children>
-                              <Button fx:id="saveContactButton" mnemonicParsing="false" style="-fx-background-color: #7abc32;" text="Save Contact" textFill="WHITE">
+                              <Button fx:id="saveContactButton" mnemonicParsing="false" style="-fx-background-color: #7abc32;" text="Save Contact" textFill="WHITE" onAction="#addContact">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
