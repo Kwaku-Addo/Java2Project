@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="676.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/15.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="isen.java2.project.controller.MainLayoutController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Menu">
+            <items>
+              <MenuItem id="homeMenuItem" mnemonicParsing="false" text="Home" onAction="#gotoHome" />
+                  <MenuItem id="closeMenuItem" mnemonicParsing="false" text="Close" onAction="#closeApplication" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Contact">
+            <items>
+              <MenuItem id="addContactMenuItem" mnemonicParsing="false" text="Add Contact" onAction="#gotoAddContacts" />
+                  <MenuItem id="allContactsMenuItem" mnemonicParsing="false" text="All Contacts " onAction="#gotoAllContacts"/>
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Export Contacts">
+               <items>
+                  <MenuItem id="excelFormatMenuItem" mnemonicParsing="false" text="Excel Format" />
+                  <MenuItem id="pdfMenuItem" mnemonicParsing="false" text="PDF" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <AnchorPane fx:id="mainContainerAnchorPane" prefHeight="651.0" prefWidth="758.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
