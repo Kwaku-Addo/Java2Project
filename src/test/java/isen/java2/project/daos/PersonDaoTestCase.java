@@ -1,14 +1,9 @@
-package fr.isen.java2.db.daos;
+package isen.java2.project.daos;
 
 import java.sql.Connection;
-import java.sql.ResultSet;
 import java.sql.Statement;
-import java.util.List;
 
 import org.junit.Before;
-import org.junit.Test;
-
-import fr.isen.java2.db.entities.Person;
 
 /**
  * PersonDatTestCase

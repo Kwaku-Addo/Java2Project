@@ -1,4 +1,4 @@
-package fr.isen.java2.db.daos;
+package isen.java2.project.daos;
 
 import java.util.Scanner;
 

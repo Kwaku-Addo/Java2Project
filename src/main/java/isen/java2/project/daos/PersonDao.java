@@ -1,7 +1,9 @@
-package fr.isen.java2.db.daos;
+package isen.java2.project.daos;
 
 import java.util.List;
-import fr.isen.java2.db.entities.Person;
+
+import isen.java2.project.entities.Person;
+
 import java.sql.Statement;
 import java.sql.Connection;
 import java.sql.Date;
@@ -9,8 +11,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.List;
-import fr.isen.java2.db.entities.Person;
 
 
 /**

@@ -1,4 +1,4 @@
-package fr.isen.java2.db.entities;
+package isen.java2.project.entities;
 
 import java.time.LocalDate;
 import java.util.Objects;
