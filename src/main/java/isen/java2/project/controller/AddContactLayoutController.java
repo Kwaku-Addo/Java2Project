@@ -12,68 +12,78 @@ import java.io.IOException;
 public class AddContactLayoutController {
 
     @FXML
-    private TextField addFirstNameTextField;
+    private TextField firstNameTextField;
 
     @FXML
-    private TextField addLastNameTextField;
+    private TextField lastNameTextField;
 
     @FXML
-    private TextField addNicknameTextField;
+    private TextField nicknameTextField;
 
     @FXML
-    private TextField addPhoneNumberTextField;
+    private TextField phoneNumberTextField;
 
     @FXML
-    private TextField addEmailTextField;
+    private TextField emailTextField;
 
     @FXML
-    private TextField addStreetNameTextField;
+    private TextField streetNameTextField;
 
     @FXML
-    private TextField addApartmentTextField;
+    private TextField apartmentTextField;
 
     @FXML
-    private TextField addPostalCodeTextField;
+    private TextField postalCodeTextField;
 
     @FXML
-    private TextField addCityTextField;
+    private TextField cityTextField;
 
     @FXML
-    private DatePicker addDateOfBirthDatePicker;
+    private DatePicker dateOfBirthDatePicker;
 
     @FXML
     private Button saveContactButton;
 
-
-
-
-    public void addContact() throws IOException {
+    AllContactsLayoutController allContactsLayoutController = new AllContactsLayoutController();
+    @FXML
+    private void addNewContact() throws IOException {
         Person person = new Person();
         PersonDao personDao = new PersonDao();
 
-        person.setLastName(addLastNameTextField.getText());
-        person.setFirstName(addFirstNameTextField.getText());
-        person.setNickName(addNicknameTextField.getText());
-        person.setPhoneNumber(addPhoneNumberTextField.getText());
-        person.setStreet(addStreetNameTextField.getText());
-        person.setApartment(addApartmentTextField.getText());
-        person.setPostalCode(Integer.valueOf(addPostalCodeTextField.getText()));
-        person.setCity(addCityTextField.getText());
-        person.setEmailAddress(addEmailTextField.getText());
-        person.setBirthDate(addDateOfBirthDatePicker.getValue());
+        person.setLastName(lastNameTextField.getText());
+        person.setFirstName(firstNameTextField.getText());
+        person.setNickName(nicknameTextField.getText());
+        person.setPhoneNumber(phoneNumberTextField.getText());
+        person.setStreet(streetNameTextField.getText());
+        person.setApartment(apartmentTextField.getText());
+        person.setPostalCode(Integer.parseInt(postalCodeTextField.getText()));
+        person.setCity(cityTextField.getText());
+        person.setEmailAddress(emailTextField.getText());
+        person.setBirthDate(dateOfBirthDatePicker.getValue());
 
-       personDao.addPerson(person);
+        if (lastNameTextField.getText().isEmpty() || firstNameTextField.getText().isEmpty() || nicknameTextField.getText().isEmpty() || phoneNumberTextField.getText().isEmpty() ||
+                streetNameTextField.getText().isEmpty() || apartmentTextField.getText().isEmpty() || postalCodeTextField.getText().isEmpty() || cityTextField.getText().isEmpty() ||
+                emailTextField.getText().isEmpty() || dateOfBirthDatePicker.getEditor().getText().isEmpty()){
+            allContactsLayoutController.myErrorAlerts("Error Adding Contact", "Empty Field Detected", "Please Make sure you have no empty field");
+        }
 
-       addFirstNameTextField.clear();
-       addLastNameTextField.clear();
-       addNicknameTextField.clear();
-       addPhoneNumberTextField.clear();
-       addStreetNameTextField.clear();
-       addApartmentTextField.clear();
-       addPostalCodeTextField.clear();
-       addCityTextField.clear();
-       addEmailTextField.clear();
-       addDateOfBirthDatePicker.getEditor().clear();
+        else{
+            personDao.addPerson(person);
+
+            firstNameTextField.clear();
+            lastNameTextField.clear();
+            nicknameTextField.clear();
+            phoneNumberTextField.clear();
+            streetNameTextField.clear();
+            apartmentTextField.clear();
+            postalCodeTextField.clear();
+            cityTextField.clear();
+            emailTextField.clear();
+            dateOfBirthDatePicker.getEditor().clear();
+
+
+            allContactsLayoutController.mySuccessAlerts("Contact Added","New Contact Added", "Your Contact has been added successfully");
+        }
 
     }
 }

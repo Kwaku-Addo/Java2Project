@@ -1,0 +1,8 @@
+BEGIN: VCARD 
+VERSION: 4.0  
+N:Kwame;Ahmed 
+FN:nick name 2
+TEL; TYPE = home, voice; VALUE = uri: tel: phone 2 
+EMAIL: email_address 2 
+ADR; TYPE=dom,home,postal,parcel:;;119;201;59320;Haubourdin 
+END: VCARD

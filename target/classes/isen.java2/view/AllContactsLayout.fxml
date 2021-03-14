@@ -29,7 +29,7 @@
         <items>
             <AnchorPane>
                <children>
-                  <TableView fx:id="contactsTableView" prefHeight="530.0" prefWidth="364.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" >
+                  <TableView fx:id="contactsTableView" prefHeight="530.0" prefWidth="364.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <columns>
                       <TableColumn fx:id="contactsTableColumn" prefWidth="217.0" text="Contacts" />
                     </columns>
@@ -196,17 +196,22 @@
                            <children>
                               <HBox alignment="CENTER" layoutX="10.0" layoutY="26.0" prefHeight="0.0" prefWidth="512.0" spacing="10.0">
                                  <children>
-                                    <Button fx:id="editContactButton" mnemonicParsing="false" style="-fx-background-color: #7abc32;" text="Edit" textFill="WHITE">
+                                    <Button fx:id="editContactButton" mnemonicParsing="false" onAction="#editContact" style="-fx-background-color: #7abc32;" text="Edit" textFill="WHITE">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="deleteContactButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #fe3939;" text="Delete" textFill="WHITE" onAction="#deleteContact">
+                                    <Button fx:id="deleteContactButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#deleteContact" style="-fx-background-color: #fe3939;" text="Delete" textFill="WHITE">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </Button>
                                     <Button fx:id="exportIndividualContactButton" layoutX="253.0" layoutY="30.0" mnemonicParsing="false" style="-fx-background-color: #009dff;" text="Export Contact" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="saveButton" layoutX="138.0" layoutY="30.0" mnemonicParsing="false" onAction="#saveEditedContacts" style="-fx-background-color: #7abc32;" text="Save" textFill="WHITE" visible="false">
                                        <font>
                                           <Font size="14.0" />
                                        </font>

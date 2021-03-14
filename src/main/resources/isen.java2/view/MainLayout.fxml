@@ -26,7 +26,7 @@
           </Menu>
             <Menu mnemonicParsing="false" text="Export Contacts">
                <items>
-                  <MenuItem id="excelFormatMenuItem" mnemonicParsing="false" text="Excel Format" />
+                  <MenuItem id="excelFormatMenuItem" mnemonicParsing="false" text="Excel Format" onAction="#exportToExcel"/>
                   <MenuItem id="pdfMenuItem" mnemonicParsing="false" text="PDF" />
                </items>
             </Menu>
